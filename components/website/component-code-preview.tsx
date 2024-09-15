@@ -26,14 +26,14 @@ export default function ComponentCodePreview({
           <TabsTrigger value='preview'>Preview</TabsTrigger>
           <TabsTrigger value='code'>Code</TabsTrigger>
         </TabsList>
-        <TabsContent value='preview'>
+        <TabsContent value='preview' className=''>
           <ComponentPreview
             component={component}
             hasReTrigger={hasReTrigger}
             className={classNameComponentContainer}
           />
         </TabsContent>
-        <TabsContent value='code'>
+        <TabsContent value='code' className='w-full'>
           <CodePreview code={fileContent}>
             <CodeRenderer code={fileContent} lang='tsx' />
           </CodePreview>
